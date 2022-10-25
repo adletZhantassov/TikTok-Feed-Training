@@ -13,6 +13,12 @@
 		60470C792908381F00616BAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60470C772908381F00616BAC /* Main.storyboard */; };
 		60470C7B2908382100616BAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60470C7A2908382100616BAC /* Assets.xcassets */; };
 		60470C7E2908382100616BAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60470C7C2908382100616BAC /* LaunchScreen.storyboard */; };
+		60470C8A29083A0800616BAC /* video3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 60470C8529083A0800616BAC /* video3.mp4 */; };
+		60470C8B29083A0800616BAC /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 60470C8629083A0800616BAC /* video2.mp4 */; };
+		60470C8C29083A0800616BAC /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 60470C8729083A0800616BAC /* video1.mp4 */; };
+		60470C8D29083A0800616BAC /* video4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 60470C8829083A0800616BAC /* video4.mp4 */; };
+		60470C8E29083A0800616BAC /* video5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 60470C8929083A0800616BAC /* video5.mp4 */; };
+		60470C9129083C7500616BAC /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60470C9029083C7500616BAC /* VideoCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		60470C7A2908382100616BAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60470C7D2908382100616BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60470C7F2908382100616BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60470C8529083A0800616BAC /* video3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video3.mp4; sourceTree = "<group>"; };
+		60470C8629083A0800616BAC /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
+		60470C8729083A0800616BAC /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
+		60470C8829083A0800616BAC /* video4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video4.mp4; sourceTree = "<group>"; };
+		60470C8929083A0800616BAC /* video5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video5.mp4; sourceTree = "<group>"; };
+		60470C9029083C7500616BAC /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,29 @@
 		60470C702908381F00616BAC /* TikTok Feed */ = {
 			isa = PBXGroup;
 			children = (
-				60470C712908381F00616BAC /* AppDelegate.swift */,
-				60470C732908381F00616BAC /* SceneDelegate.swift */,
+				60470C8F29083AA900616BAC /* App files */,
 				60470C752908381F00616BAC /* ViewController.swift */,
 				60470C772908381F00616BAC /* Main.storyboard */,
-				60470C7A2908382100616BAC /* Assets.xcassets */,
-				60470C7C2908382100616BAC /* LaunchScreen.storyboard */,
 				60470C7F2908382100616BAC /* Info.plist */,
+				60470C9029083C7500616BAC /* VideoCollectionViewCell.swift */,
 			);
 			path = "TikTok Feed";
+			sourceTree = "<group>";
+		};
+		60470C8F29083AA900616BAC /* App files */ = {
+			isa = PBXGroup;
+			children = (
+				60470C7C2908382100616BAC /* LaunchScreen.storyboard */,
+				60470C712908381F00616BAC /* AppDelegate.swift */,
+				60470C732908381F00616BAC /* SceneDelegate.swift */,
+				60470C7A2908382100616BAC /* Assets.xcassets */,
+				60470C8729083A0800616BAC /* video1.mp4 */,
+				60470C8629083A0800616BAC /* video2.mp4 */,
+				60470C8529083A0800616BAC /* video3.mp4 */,
+				60470C8829083A0800616BAC /* video4.mp4 */,
+				60470C8929083A0800616BAC /* video5.mp4 */,
+			);
+			path = "App files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +154,11 @@
 				60470C7E2908382100616BAC /* LaunchScreen.storyboard in Resources */,
 				60470C7B2908382100616BAC /* Assets.xcassets in Resources */,
 				60470C792908381F00616BAC /* Main.storyboard in Resources */,
+				60470C8C29083A0800616BAC /* video1.mp4 in Resources */,
+				60470C8B29083A0800616BAC /* video2.mp4 in Resources */,
+				60470C8E29083A0800616BAC /* video5.mp4 in Resources */,
+				60470C8D29083A0800616BAC /* video4.mp4 in Resources */,
+				60470C8A29083A0800616BAC /* video3.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +171,7 @@
 			files = (
 				60470C762908381F00616BAC /* ViewController.swift in Sources */,
 				60470C722908381F00616BAC /* AppDelegate.swift in Sources */,
+				60470C9129083C7500616BAC /* VideoCollectionViewCell.swift in Sources */,
 				60470C742908381F00616BAC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +325,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +337,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,6 +354,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +366,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
