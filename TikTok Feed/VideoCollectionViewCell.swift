@@ -8,9 +8,55 @@
 import UIKit
 import AVFoundation
 
+protocol VideoCollectionViewCellDelegate: AnyObject {
+    func didTapLikeButton(with model: VideoModel)
+    func didTapProfileButton(with model: VideoModel)
+    func didTapShareButton(with model: VideoModel)
+    func didTapCommentButton(with model: VideoModel)
+}
+
 class VideoCollectionViewCell: UICollectionViewCell {
     
     static let identifier = "VideoCollectionViewCell"
+    //labels
+    private let userNameLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .left
+        label.textColor = .white
+        return label
+    }()
+    private let captionLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .left
+        label.textColor = .white
+        return label
+    }()
+    private let audioLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .left
+        label.textColor = .white
+        return label
+    }()
+    //buttons
+    private let profileButton: UIButton = {
+        let button = UIButton()
+        return button
+    }()
+    private let likeButton: UIButton = {
+        let button = UIButton()
+        return button
+    }()
+    private let commentButton: UIButton = {
+        let button = UIButton()
+        return button
+    }()
+    private let shareButton: UIButton = {
+        let button = UIButton()
+        return button
+    }()
+    //delegate
+    weak var delegate: VideoCollectionViewCellDelegate?
+    
     //Subviews
     var player: AVPlayer?
     
@@ -19,6 +65,18 @@ class VideoCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         contentView.backgroundColor = .black
         contentView.clipsToBounds = true
+        addSubviews()
+    }
+    
+    private func addSubviews() {
+        contentView.addSubview(userNameLabel)
+        contentView.addSubview(captionLabel)
+        contentView.addSubview(audioLabel)
+        
+        contentView.addSubview(profileButton)
+        contentView.addSubview(shareButton)
+        contentView.addSubview(commentButton)
+        contentView.addSubview(likeButton)
     }
     
     required init?(coder: NSCoder) {
