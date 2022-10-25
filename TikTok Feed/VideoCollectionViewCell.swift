@@ -17,7 +17,8 @@ class VideoCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        contentView.backgroundColor = .black
+        contentView.clipsToBounds = true
     }
     
     required init?(coder: NSCoder) {
@@ -25,6 +26,15 @@ class VideoCollectionViewCell: UICollectionViewCell {
     }
     
     public func configure(with model: VideoModel) {
-        contentView.backgroundColor = .red
+        guard let path = Bundle.main.path(forResource: model.videoFileName, ofType: model.videoFileFormat) else { return }
+        let url = URL(fileURLWithPath: path)
+        player = AVPlayer(url: url)
+        let playerView = AVPlayerLayer()
+        playerView.player = player
+        playerView.frame = contentView.bounds
+//        playerView.videoGravity = .resizeAspectFill
+        contentView.layer.addSublayer(playerView)
+        player?.volume = 0
+        player?.play()
     }
 }

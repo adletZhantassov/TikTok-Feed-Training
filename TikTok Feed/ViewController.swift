@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for x in 0...5 {
+        for x in 1...5 {
             let model = VideoModel(caption: "This is a cool video \(x)", username: "@adlet", audioTrackName: "video song", videoFileName: "video\(x)", videoFileFormat: "mp4")
             data.append(model)
         }
